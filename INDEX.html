@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>xB4IL3E | Official Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(0px);
+    background:rgba(0, 0, 0, 0);
+    z-index:1000;
+}
+
+.logo a{
+    font-size:1.8rem;
+    font-weight:700;
+    color:#000000;
+    text-shadow: 0 1px 13px #ff0000;
+}
+
+.logo a:hover{
+    color:#ff0000;
+    text-decoration:none;
+    text-shadow: 0 1px 10px #ff0000;
+    transition: all 0.3s ease .1s;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    text-decoration: none;
+  font-family: "Tilt Neon", sans-serif;
+  font-size: larger;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+  
+}
+
+.nav-links a{
+    
+    color:rgb(0, 0, 0);
+    transition: all 0.3s ease .1s;
+    text-decoration: none;
+    text-shadow: 0 1px 15px #ae00ff;
+}
+
+.nav-links a:hover{
+    color: #ff0000;
+    text-shadow: 0 1px 10px #ff0000;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 10%;
+    background:
+    linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),
+
+    background-size :cover;
+    background-position :center;
+}
+
+.hero-gif {
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.hero-content h1{
+    font-size:5rem;
+    margin-bottom:20px;
+}
+
+.hero-content span{
+    color:#ae00ff;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    color:#000000;
+    margin-bottom:30px;
+    box-shadow: 0 0 10px #b700ff;
+}
+
+.video-bg {
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#000000a4;
+    color:#b700ff;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    color: #ff0000;
+  /* Or for a glow effect */
+  box-shadow: 0 2px 18px #ff0000; 
+}
+
+/* SECTIONS */
+
+section{
+    padding:50px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:60px;
+    
+}
+
+.section-title span{
+    color:#ff0000;
+}
+
+/* Mobile Menu Button */
+
+.menu-btn{
+    display:none;
+    font-size:2rem;
+    cursor:pointer;
+    color:#000000;
+    text-shadow: 0 0px 5px #ff0000;
+}
+
+/* Sidebar */
+
+.sidebar{
+    position:fixed;
+    top:0;
+    right:-300px;
+    width:280px;
+    height:100%;
+    background:#111111;
+    display:flex;
+    flex-direction:column;
+    padding-top:80px;
+    transition:0.4s;
+    z-index:2000;
+    box-shadow:-5px 0 15px rgba(0,0,0,.5);
+}
+
+.sidebar.active{
+    right:0;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    padding:18px 30px;
+    font-size:1.1rem;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#ff0000;
+    color:black;
+}
+
+.close-btn{
+    position:absolute;
+    top:20px;
+    right:25px;
+    font-size:2rem;
+    cursor:pointer;
+    color:#ff0000;
+}
+
+/* Mobile */
+
+@media (max-width:767px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+}
+
+/* TUNE IN*/
+
+.about{
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    gap:50px;
+    align-items:center;
+    
+}
+
+
+/* EVENTS */
+
+.events-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.event-card{
+    background:#0000004d;
+    padding:25px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.event-card:hover{
+    transform:translateY(-10px);
+     color: #8c00ff;
+  /* Or for a glow effect */
+  box-shadow: 0 2px 18px #ff0000; 
+}
+
+.event-card h3{
+    color:#ff0000;
+    margin-bottom:10px;
+}
+
+/* MUSIC */
+
+.music-card {
+    
+    border: 0px solid #ff0000;
+
+    border-radius: 12px;
+    margin-bottom: 0px;
+   
+    height: 100%;
+    box-shadow:
+    0 0 5px #ff0000,
+    0 0 15px #ff0000,
+    0 0 20px #c9fdff,
+    0 0 3rem -0.75rem hsla(0, 0%, 0%, 0.45);
+
+    backdrop-filter: blur(8px);
+}
+
+
+
+/* merch cariusel */
+.carousel-2 {
+    width: 100%;
+    max-width: fit-content;
+    display: inline-grid;
+    container: vw;
+    overflow-x: auto;
+    position: relative;
+    grid-auto-flow: column;
+    border: 1px;
+    border-color: #ff0000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+     > li {
+    scroll-snap-align: center;
+  }
+ 
+  &::scroll-button {
+      background:  #ff1414a1;
+  }
+}
+
+.carousel-2::-webkit-scrollbar {
+    height: 0.8rem;
+    
+}
+
+.carousel-2::-webkit-scrollbar-track {
+    background: #fc01019d;
+}
+
+.carousel-2::-webkit-scrollbar-thumb {
+    background: #00000091;
+}
+
+.section .merchbtn {
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTACT */
+
+.contact-container{
+    max-width:700px;
+    margin:auto;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    background:#151515;
+    border:none;
+    padding:15px;
+    color:white;
+    border-radius:10px;
+}
+
+textarea{
+    resize:none;
+    height:150px;
+}
+
+p {
+  margin-top: 20px; /* Adds 20 pixels of space above every paragraph */
+}
+
+li, a, button, btn {
+  text-decoration: none;
+  font-family: "Tilt Neon", sans-serif;
+  font-size: larger;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+}
+
+.a {
+    text-shadow: 0 0 .125em hsl(0 0 80%), 0 0 .25em var(--clr-neon);
+}
+button{
+    
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+
+    display: inline;
+    
+    position: relative;
+    align-items:  center center;
+    color: #ff0000;
+    background-color: #ff330000;
+    
+    
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+transform:translateY(-4px);
+color: #ff0000;
+  /* Or for a glow effect */
+  box-shadow: 0 2px 18px #ff0000; 
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    
+}
+
+.slider::-webkit-scrollbar {
+    height: 0.5rem;
+    
+}
+
+.slider::-webkit-scrollbar-track {
+    background: #ff0000;
+}
+
+.slider::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 38rem;
+    margin: 0 auto;
+    
+}
+.slider {
+    display: flex;
+    aspect-ratio: 5 / 5;
+    overflow-x:scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+    border: 0px solid #00000000;
+
+    border-radius: 20px;
+
+   
+
+    box-shadow:
+    0 0 5px #ff0000,
+    0 0 15px #ff0000,
+    0 0 20px #c9fdff,
+    0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.45);
+
+    backdrop-filter: blur(8px);
+}
+    
+
+.slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+
+.footer-bg {
+    
+    border: 0px solid #ff0000;
+
+    border-radius: 12px;
+    
+   
+    height: 100%;
+    box-shadow:
+    0 0 5px #ff0000,
+    0 0 15px #ff0000,
+    0 0 20px #c9fdff,
+    0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.45);
+
+    backdrop-filter: blur(8px);
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    navigation: false;
+}
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #00000000;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+/* =================================
+   MAIN GAME SECTION
+   ================================= */
+
+#vampire-flap-game {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #241526 0%,
+      #100c15 45%,
+      #050509 100%
+    );
+
+  border: 2px solid #4d234f;
+
+  box-shadow:
+    0 0 20px #000,
+    inset 0 0 30px #000;
+
+  color: #eee;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  text-align: center;
+}
+
+
+/* HEADER */
+
+.arcade-header h2 {
+
+  margin: 5px 0;
+
+  color: #c900ff;
+
+  font-size: 28px;
+
+  letter-spacing: 5px;
+
+  text-shadow:
+    0 0 5px #c900ff,
+    0 0 15px #c900ff,
+    0 0 30px #7a008f;
+
+}
+
+.arcade-header p {
+
+  margin-top: 5px;
+
+  color: #aaa;
+
+  letter-spacing: 2px;
+
+}
+
+
+/* =================================
+   GAME WINDOW
+   ================================= */
+
+.game-wrapper {
+
+  position: relative;
+
+  width: 100%;
+
+  max-width: 800px;
+
+  margin: auto;
+
+  overflow: hidden;
+
+  border: 3px solid #542052;
+
+  box-shadow:
+    0 0 15px #000,
+    0 0 30px rgba(180, 0, 255, .15);
+
+}
+
+
+/* CANVAS */
+
+#gameCanvas {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  background: #08070c;
+
+}
+
+
+/* =================================
+   GAME SCREENS
+   ================================= */
+
+.game-screen {
+
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    rgba(5, 3, 8, .88);
+
+  backdrop-filter: blur(3px);
+
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+/* TITLE */
+
+.game-title {
+
+  font-size: 42px;
+
+  font-weight: bold;
+
+  letter-spacing: 6px;
+
+  color: #d000ff;
+
+  text-shadow:
+    0 0 5px #d000ff,
+    0 0 15px #d000ff,
+    0 0 30px #7a008f;
+
+}
+
+
+.game-subtitle {
+
+  margin-bottom: 25px;
+
+  color: #bbb;
+
+  letter-spacing: 4px;
+
+}
+
+
+/* NAME INPUT */
+
+#playerName {
+
+  width: 170px;
+
+  padding: 12px;
+
+  margin-bottom: 15px;
+
+  box-sizing: border-box;
+
+  background: #0b080d;
+
+  border: 2px solid #722477;
+
+  color: #fff;
+
+  text-align: center;
+
+  font-family: "Courier New", monospace;
+
+  font-size: 20px;
+
+  letter-spacing: 6px;
+
+  outline: none;
+
+  text-transform: uppercase;
+
+}
+
+
+#playerName:focus {
+
+  border-color: #d000ff;
+
+  box-shadow:
+    0 0 10px #d000ff;
+
+}
+
+
+/* BUTTONS */
+
+button {
+
+  padding: 13px 30px;
+
+  border: 2px solid #b900e8;
+
+  background: #160d1b;
+
+  color: #e38aff;
+
+  font-family: "Courier New", monospace;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  transition: .15s;
+
+}
+
+
+button:hover {
+
+  background: #b900e8;
+
+  color: #fff;
+
+  box-shadow:
+    0 0 10px #b900e8,
+    0 0 25px #b900e8;
+
+}
+
+
+.instructions {
+
+  margin-top: 25px;
+
+  color: #777;
+
+  line-height: 1.7;
+
+}
+
+
+/* =================================
+   SCORE
+   ================================= */
+
+.score-display {
+
+  margin-top: 15px;
+
+  font-size: 24px;
+
+  color: #d000ff;
+
+  letter-spacing: 4px;
+
+  text-shadow:
+    0 0 10px #8c00a8;
+
+}
+
+
+/* =================================
+   HIGH SCORES
+   ================================= */
+
+.highscores {
+
+  max-width: 400px;
+
+  margin: 25px auto 5px;
+
+  padding: 15px;
+
+  background: #0b080e;
+
+  border: 1px solid #321635;
+
+}
+
+
+.highscores h3 {
+
+  margin-top: 0;
+
+  color: #b900e8;
+
+  letter-spacing: 3px;
+
+}
+
+
+#highScoreList {
+
+  margin: 0;
+
+  padding-left: 35px;
+
+  text-align: left;
+
+  color: #bbb;
+
+}
+
+
+#highScoreList li {
+
+  padding: 5px 0;
+
+  border-bottom: 1px solid #211522;
+
+}
+
+
+#highScoreList li:first-child {
+
+  color: #e8a0ff;
+
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #222;
+    color:#aaa;
+}
+
+/* ========================= */
+/* PHONE */
+/* ========================= */
+
+@media (max-width: 767px){
+
+    .hero-content img{
+        width:100%;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .events-grid{
+        grid-template-columns:1fr;
+    }
+
+    .music-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:80px 6%;
+    }
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (min-width:768px) and (max-width:1023px){
+
+    .hero-content h1{
+        font-size:4rem;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .events-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .music-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+/* ========================= */
+/* LAPTOP */
+/* ========================= */
+
+@media (min-width:1024px) and (max-width:1439px){
+
+    .hero-content h1{
+        font-size:4.5rem;
+    }
+
+    .events-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+/* ========================= */
+/* LARGE PC */
+/* ========================= */
+
+@media (min-width:1440px){
+
+    .hero-content h1{
+        font-size:6rem;
+    }
+
+    .container{
+        max-width:1600px;
+        margin:auto;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <a href="#home">B4IL3E</a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <div class="nav-links">
+        <a href="#music">MUSIC</a>
+        <a href="#events">EVENTS</a>
+        <a href="#merch">MERCH</a>
+        <a href="#game">ARCADE</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-btn" onclick="openSidebar()">
+        ☰
+    </div>
+</nav>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+
+    <div class="close-btn" onclick="closeSidebar()">
+        ✕
+    </div>
+
+    <a href="#music" onclick="closeSidebar()">Music</a>
+    <a href="#events" onclick="closeSidebar()">Events</a>
+    <a href="#merch" onclick="closeSidebar()">Merch</a>
+    <a href="#game" onclick="closeSidebar()">Arcade</a>
+    <a href="#contact" onclick="closeSidebar()">Contact</a>
+
+    <!-- Add your own links here -->
+    <a href="#gallery" onclick="closeSidebar()">Gallery</a>
+    <a href="#bookings" onclick="closeSidebar()">Bookings</a>
+
+</div>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1 class="titlecard"><img src="3DLogoSpin.png" alt="image404"></h1>
+
+        <p>
+            Click the linkz below!! or scroll down...
+        </p>
+
+        <a href="https://linktr.ee/b4il3e?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAacYU081BKJM6uFxpm1sAJ_Qh2LE18_CG0C04icrTC9lkisaMY8PqRY_FbSIGA_aem_XmFZZg3wf8DRuvn95xaBcA" class="btn">Linkz</a>
+        
+        <video class="video-bg" autoplay muted loop>
+            <source src="life kindof.mp4"
+            type="video/mp4">
+        </video>
+
+          <img src="8c888f234b9ce94baa7a5bac3bc41782.gif" alt="Overlay Animation" class="hero-gif">
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="music">
+
+    <h2 class="section-title">☆ TUNE <span>IN ☆</span></h2>
+
+    <div class="about">
+
+ 
+        
+        <div class="music-grid">
+
+            <div class="music-card">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5BqJVu9ifL7yvTviiEZa4l?utm_source=generator&theme=0&si=374b5feff9de4ba7" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EVENTS -->
+
+<section id="events">
+
+    <h2 class="section-title"><span>☆ Events ☆</span></h2>
+
+    <div class="events-grid">
+
+        <div class="event-card">
+            <h3>Twitch Stream</h3>
+            <p>Monday</p>
+            <p>Twitch.tv/b4il3e</p>
+        </div>
+
+        <div class="event-card">
+            <h3>Twitch Stream</h3>
+            <p>Thursday</p>
+            <p>Twitch.tv/b4il3e</p>
+        </div>
+
+        <div class="event-card">
+            <h3>Twitch Stream</h3>
+            <p>Friday</p>
+            <p>Twitch.tv/b4il3e</p>
+        </div>
+
+        <div class="event-card">
+            <h3>Twitch Stream</h3>
+            <p>Sunday</p>
+            <p>Twitch.tv/b4il3e</p>
+        </div>
+        
+        <button onclick="window.location.href='https://www.twitch.tv/b4il3e';" target="_blank" rel="noopener noreferrer">
+            Twitch.tv/b4il3e
+        </button>
+        
+    </div>
+        
+</section>
+
+
+<section id="merch">
+
+        <h2 class="section-title"><span>☆ MERCH ☆ </span></h2>
+           
+            <div class="main-container-1">
+             
+                <ul class="carousel-2">
+                    <li class="color-block"><img src="b4shirt1.png"></li>
+                    <li class="color-block"><img src="b4shirt22.png"></li>
+                    <li class="color-block"><img src="b4shirt33.png"></li>
+                    <li class="color-block"><img src="b4shirt44.png"></li>
+                    <li class="color-block"><img src="b4shirt55.png"></li>
+                    
+                </ul>
+
+            </div>
+
+            <button class="merchbtn"onclick="window.location.href='https://www.depop.com/luvbail/'" target="_blank" rel="noopener noreferrer">
+            SHOP MERCH
+            </button>
+
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+
+    <h2 class="section-title"><span>☆ Gallery ☆</span></h2>
+
+       <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="622636805_18038142989741278_119086195510587060_n.jpg" alt="image404">
+                    <img id="slide-2" src="703318934_18052718738741278_4912962050156586207_n.jpg" alt="image404">
+                    <img id="slide-3" src="620953430_18038142971741278_3147063446369951375_n.jpg" alt="image404">
+                    <img id="slide-4" src="B4IL3E (1).png" alt="image404">
+                </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     VAMPIRE DUNGEON FLAP GAME
+     ========================= -->
+    <h2 class="section-title" id="game"> <span>☆ ARCADE ☆</span></h2>
+
+<section id="vampire-flap-game">
+
+  <div class="arcade-header">
+    <h2>☠ DUNGEON FLIGHT ☠</h2>
+    <p>PRESS <strong>↑</strong> TO FLY</p>
+  </div>
+
+  <div class="game-wrapper">
+
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+    <!-- START SCREEN -->
+    <div id="startScreen" class="game-screen">
+      <div class="game-title">DUNGEON FLIGHT</div>
+      <div class="game-subtitle">VAMPIRE'S ESCAPE</div>
+
+      <input
+        id="playerName"
+        type="text"
+        maxlength="6"
+        placeholder="NAME"
+        autocomplete="off"
+      >
+
+      <button id="startButton">START GAME</button>
+
+      <p class="instructions">
+        PRESS <b>↑</b> TO JUMP<br>
+        AVOID THE DUNGEON
+      </p>
+    </div>
+
+    <!-- GAME OVER -->
+    <div id="gameOverScreen" class="game-screen hidden">
+
+      <div class="game-title">GAME OVER</div>
+
+      <div class="final-score">
+        SCORE: <span id="finalScore">0</span>
+      </div>
+
+      <button id="restartButton">RESTART</button>
+
+    </div>
+
+  </div>
+
+  <!-- SCORE -->
+  <div class="score-display">
+    SCORE: <span id="score">0</span>
+  </div>
+
+  <!-- HIGH SCORES -->
+  <div class="highscores">
+
+    <h3>☠ HIGH SCORES ☠</h3>
+
+    <ol id="highScoreList"></ol>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <h2 class="section-title"> <span>☆ Contact ☆</span></h2>
+
+    <div class="contact-container">
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Event Details"></textarea>
+            <button type="submit">Send Booking Request</button>
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 xB4IL3E • All Rights Reserved
+</footer>
+<script>
+function openSidebar(){
+    document.getElementById("sidebar")
+        .classList.add("active");
+}
+
+function closeSidebar(){
+    document.getElementById("sidebar")
+        .classList.remove("active");
+}
+</script>
+
+<script>
+/* ============================================
+   DUNGEON FLIGHT
+   ============================================ */
+
+const canvas = document.getElementById("gameCanvas");
+const ctx = canvas.getContext("2d");
+
+const playerImage = new Image();
+playerImage.src = "Baileeshed.png";
+
+const backgroundImage = new Image();
+backgroundImage.src = "dungeon-background.png";
+
+const WIDTH = canvas.width;
+const HEIGHT = canvas.height;
+
+
+/* ============================================
+   UI
+   ============================================ */
+
+const startScreen = document.getElementById("startScreen");
+const gameOverScreen = document.getElementById("gameOverScreen");
+
+const startButton = document.getElementById("startButton");
+const restartButton = document.getElementById("restartButton");
+
+const playerNameInput = document.getElementById("playerName");
+
+const scoreDisplay = document.getElementById("score");
+const finalScore = document.getElementById("finalScore");
+
+const highScoreList = document.getElementById("highScoreList");
+
+
+/* ============================================
+   GAME STATE
+   ============================================ */
+
+let gameRunning = false;
+let gameOver = false;
+
+let score = 0;
+let playerName = "";
+
+let pipes = [];
+let frame = 0;
+
+
+/* ============================================
+   PLAYER
+   ============================================ */
+
+const player = {
+
+    x: 150,
+    y: 250,
+
+    width: 38,
+    height: 38,
+
+    velocity: 0,
+
+    gravity: 0.42,
+
+    jumpStrength: -7.5
+
+};
+
+
+/* ============================================
+   GAME SETTINGS
+   ============================================ */
+
+const pipeWidth = 75;
+
+const pipeGap = 175;
+
+const pipeSpeed = 3.2;
+
+const pipeSpawnRate = 105;
+
+
+/* ============================================
+   START GAME
+   ============================================ */
+
+function startGame() {
+
+    let name = playerNameInput.value
+        .trim()
+        .toUpperCase();
+
+    if (name.length < 1 || name.length > 6) {
+
+        alert("ENTER 1-6 CHARACTERS");
+
+        return;
+
+    }
+
+    playerName = name;
+
+    gameRunning = true;
+    gameOver = false;
+
+    score = 0;
+    frame = 0;
+
+    pipes = [];
+
+    player.y = HEIGHT / 2;
+    player.velocity = 0;
+
+    scoreDisplay.textContent = "0";
+
+    startScreen.classList.add("hidden");
+
+    gameOverScreen.classList.add("hidden");
+
+}
+
+
+/* ============================================
+   RESTART
+   ============================================ */
+
+function restartGame() {
+
+    startGame();
+
+}
+
+
+/* ============================================
+   JUMP
+   ============================================ */
+
+function jump() {
+
+    if (!gameRunning) return;
+
+    player.velocity = player.jumpStrength;
+
+}
+
+
+/* ============================================
+   UP ARROW CONTROL
+   ============================================ */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "ArrowUp") {
+
+        event.preventDefault();
+
+        jump();
+
+    }
+
+});
+
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+startButton.addEventListener("click", startGame);
+
+restartButton.addEventListener("click", restartGame);
+
+
+/* ============================================
+   CREATE OBSTACLE
+   ============================================ */
+
+function createPipe() {
+
+    const minimum = 70;
+
+    const maximum = HEIGHT - pipeGap - 70;
+
+    const topHeight =
+        Math.random() * (maximum - minimum) + minimum;
+
+    pipes.push({
+
+        x: WIDTH,
+
+        top: topHeight,
+
+        bottom: topHeight + pipeGap,
+
+        passed: false
+
+    });
+
+}
+
+
+/* ============================================
+   UPDATE GAME
+   ============================================ */
+
+function update() {
+
+    if (!gameRunning) return;
+
+
+    /* PLAYER GRAVITY */
+
+    player.velocity += player.gravity;
+
+    player.y += player.velocity;
+
+
+    /* CREATE OBSTACLES */
+
+    if (frame % pipeSpawnRate === 0) {
+
+        createPipe();
+
+    }
+
+
+    /* MOVE OBSTACLES */
+
+    for (let i = pipes.length - 1; i >= 0; i--) {
+
+        const pipe = pipes[i];
+
+        pipe.x -= pipeSpeed;
+
+
+        /* SCORE */
+
+        if (
+            !pipe.passed &&
+            pipe.x + pipeWidth < player.x
+        ) {
+
+            pipe.passed = true;
+
+            score++;
+
+            scoreDisplay.textContent = score;
+
+        }
+
+
+        /* REMOVE OLD OBSTACLES */
+
+        if (pipe.x + pipeWidth < 0) {
+
+            pipes.splice(i, 1);
+
+        }
+
+    }
+
+
+    /* ========================================
+       SCREEN COLLISION
+       ======================================== */
+
+    if (
+        player.y < 0 ||
+        player.y + player.height > HEIGHT
+    ) {
+
+        endGame();
+
+    }
+
+
+    /* ========================================
+       OBSTACLE COLLISION
+       ======================================== */
+
+    const collisionPadding = 6;
+
+    for (const pipe of pipes) {
+
+        const playerLeft = player.x;
+
+        const playerRight =
+            player.x + player.width;
+
+        const playerTop = player.y;
+
+        const playerBottom =
+            player.y + player.height;
+
+
+        /*
+         * Make obstacle hitbox slightly
+         * larger for more sensitive collision.
+         */
+
+        const obstacleLeft =
+            pipe.x - collisionPadding;
+
+        const obstacleRight =
+            pipe.x +
+            pipeWidth +
+            collisionPadding;
+
+
+        const obstacleTop =
+            pipe.top + collisionPadding;
+
+        const obstacleBottom =
+            pipe.bottom - collisionPadding;
+
+
+        const horizontalCollision =
+            playerRight > obstacleLeft &&
+            playerLeft < obstacleRight;
+
+
+        const hitsTopObstacle =
+            playerTop < obstacleTop;
+
+
+        const hitsBottomObstacle =
+            playerBottom > obstacleBottom;
+
+
+        if (
+            horizontalCollision &&
+            (
+                hitsTopObstacle ||
+                hitsBottomObstacle
+            )
+        ) {
+
+            endGame();
+
+        }
+
+    }
+
+
+    frame++;
+
+}
+
+
+/* ============================================
+   GAME OVER
+   ============================================ */
+
+function endGame() {
+
+    if (gameOver) return;
+
+    gameRunning = false;
+
+    gameOver = true;
+
+    finalScore.textContent = score;
+
+    saveHighScore();
+
+    gameOverScreen.classList.remove("hidden");
+
+}
+
+
+/* ============================================
+   BACKGROUND
+   ============================================ */
+
+function drawBackground() {
+
+    if (backgroundImage.complete) {
+
+        ctx.drawImage(
+            backgroundImage,
+            0,
+            0,
+            WIDTH,
+            HEIGHT
+        );
+
+    } else {
+
+        // Fallback while image loads
+        ctx.fillStyle = "#08040c";
+
+        ctx.fillRect(
+            0,
+            0,
+            WIDTH,
+            HEIGHT
+        );
+
+    }
+
+}
+
+
+/* ============================================
+   TORCH
+   ============================================ */
+
+function drawTorch(x, y) {
+
+    ctx.fillStyle = "#40220f";
+
+    ctx.fillRect(
+        x - 5,
+        y,
+        10,
+        40
+    );
+
+
+    ctx.beginPath();
+
+    ctx.arc(
+        x,
+        y - 5,
+        14,
+        0,
+        Math.PI * 2
+    );
+
+    ctx.fillStyle = "#d36bff";
+
+    ctx.shadowBlur = 20;
+
+    ctx.shadowColor = "#b000ff";
+
+    ctx.fill();
+
+    ctx.shadowBlur = 0;
+
+}
+
+
+/* ============================================
+   PLAYER
+   ============================================ */
+
+function drawPlayer() {
+
+    const x = player.x;
+    const y = player.y;
+
+    const size = 55;
+
+    ctx.save();
+
+    /*
+     * Draw a dark glow around the character
+     */
+
+    ctx.shadowBlur = 12;
+    ctx.shadowColor = "#b000ff";
+
+    ctx.drawImage(
+        playerImage,
+        x - 8,
+        y - 8,
+        size,
+        size
+    );
+
+    ctx.restore();
+
+}
+
+/* ============================================
+   DUNGEON OBSTACLE
+   ============================================ */
+
+function drawPipe(pipe) {
+
+    drawDungeonWall(
+        pipe.x,
+        0,
+        pipeWidth,
+        pipe.top
+    );
+
+
+    drawDungeonWall(
+        pipe.x,
+        pipe.bottom,
+        pipeWidth,
+        HEIGHT - pipe.bottom
+    );
+
+
+    drawSpikes(
+        pipe.x,
+        pipe.top,
+        pipeWidth,
+        true
+    );
+
+
+    drawSpikes(
+        pipe.x,
+        pipe.bottom,
+        pipeWidth,
+        false
+    );
+
+}
+
+
+/* ============================================
+   DUNGEON WALL
+   ============================================ */
+
+function drawDungeonWall(
+    x,
+    y,
+    width,
+    height
+) {
+
+    if (height <= 0) return;
+
+
+    ctx.fillStyle = "#17121a";
+
+    ctx.fillRect(
+        x,
+        y,
+        width,
+        height
+    );
+
+
+    /* BRICKS */
+
+    ctx.strokeStyle = "#3b293e";
+
+    ctx.lineWidth = 2;
+
+    for (
+        let yy = y + 20;
+        yy < y + height;
+        yy += 30
+    ) {
+
+        ctx.beginPath();
+
+        ctx.moveTo(
+            x,
+            yy
+        );
+
+        ctx.lineTo(
+            x + width,
+            yy
+        );
+
+        ctx.stroke();
+
+    }
+
+
+    /* CHAIN */
+
+    ctx.strokeStyle = "#714878";
+
+    ctx.lineWidth = 3;
+
+    ctx.beginPath();
+
+    ctx.moveTo(
+        x + width / 2,
+        y
+    );
+
+    ctx.lineTo(
+        x + width / 2,
+        y + height
+    );
+
+    ctx.stroke();
+
+}
+
+
+/* ============================================
+   SPIKES
+   ============================================ */
+
+function drawSpikes(
+    x,
+    y,
+    width,
+    pointingUp
+) {
+
+    const spikeSize = 15;
+
+    ctx.fillStyle = "#8b8b96";
+
+
+    for (
+        let i = 0;
+        i < width;
+        i += spikeSize
+    ) {
+
+        ctx.beginPath();
+
+
+        if (pointingUp) {
+
+            ctx.moveTo(
+                x + i,
+                y
+            );
+
+            ctx.lineTo(
+                x + i + spikeSize / 2,
+                y + spikeSize
+            );
+
+            ctx.lineTo(
+                x + i + spikeSize,
+                y
+            );
+
+        } else {
+
+            ctx.moveTo(
+                x + i,
+                y
+            );
+
+            ctx.lineTo(
+                x + i + spikeSize / 2,
+                y - spikeSize
+            );
+
+            ctx.lineTo(
+                x + i + spikeSize,
+                y
+            );
+
+        }
+
+
+        ctx.closePath();
+
+        ctx.fill();
+
+    }
+
+}
+
+
+/* ============================================
+   DRAW
+   ============================================ */
+
+function draw() {
+
+    ctx.clearRect(
+        0,
+        0,
+        WIDTH,
+        HEIGHT
+    );
+
+
+    drawBackground();
+
+
+    /* OBSTACLES */
+
+    for (const pipe of pipes) {
+
+        drawPipe(pipe);
+
+    }
+
+
+    /* PLAYER */
+
+    drawPlayer();
+
+
+    /* DARK VIGNETTE */
+
+    const vignette =
+        ctx.createRadialGradient(
+            WIDTH / 2,
+            HEIGHT / 2,
+            100,
+            WIDTH / 2,
+            HEIGHT / 2,
+            450
+        );
+
+
+    vignette.addColorStop(
+        0,
+        "rgba(0,0,0,0)"
+    );
+
+    vignette.addColorStop(
+        1,
+        "rgba(0,0,0,.65)"
+    );
+
+
+    ctx.fillStyle = vignette;
+
+    ctx.fillRect(
+        0,
+        0,
+        WIDTH,
+        HEIGHT
+    );
+
+}
+
+
+/* ============================================
+   GAME LOOP
+   ============================================ */
+
+function gameLoop() {
+
+    update();
+
+    draw();
+
+    requestAnimationFrame(gameLoop);
+
+}
+
+
+/* ============================================
+   HIGH SCORE SYSTEM
+   ============================================ */
+
+function getHighScores() {
+
+    return JSON.parse(
+        localStorage.getItem(
+            "dungeonFlightScores"
+        )
+    ) || [];
+
+}
+
+
+/* ============================================
+   SAVE HIGH SCORE
+   ============================================ */
+
+function saveHighScore() {
+
+    const scores = getHighScores();
+
+
+    scores.push({
+
+        name: playerName,
+
+        score: score
+
+    });
+
+
+    scores.sort(
+        (a, b) =>
+            b.score - a.score
+    );
+
+
+    /* ONLY KEEP TOP 3 */
+
+    const topScores =
+        scores.slice(0, 3);
+
+
+    localStorage.setItem(
+        "dungeonFlightScores",
+        JSON.stringify(topScores)
+    );
+
+
+    displayHighScores();
+
+}
+
+
+/* ============================================
+   DISPLAY TOP 3
+   ============================================ */
+
+function displayHighScores() {
+
+    const scores = getHighScores();
+
+    highScoreList.innerHTML = "";
+
+
+    if (scores.length === 0) {
+
+        const li =
+            document.createElement("li");
+
+        li.textContent =
+            "NO SCORES YET";
+
+        highScoreList.appendChild(li);
+
+        return;
+
+    }
+
+
+    scores.forEach(
+        (entry, index) => {
+
+            const li =
+                document.createElement("li");
+
+
+            li.innerHTML =
+                `<strong>${index + 1}.</strong>
+                ${entry.name}
+                ........
+                ${entry.score}`;
+
+
+            highScoreList.appendChild(li);
+
+        }
+    );
+
+}
+
+
+/* ============================================
+   INITIALIZE
+   ============================================ */
+
+displayHighScores();
+
+gameLoop();
+
+</script>
+</body>
+</html>
